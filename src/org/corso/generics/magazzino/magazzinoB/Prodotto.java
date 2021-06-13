@@ -1,5 +1,11 @@
 package org.corso.generics.magazzino.magazzinoB;
 
+/**
+ * Prodotto NON puó contenere la quantitá.
+ * Se questa classe si chiama Prodotto dovrebbe allora semplicemente riportare come é fatto un prodotto.
+ * La quantitá potrebbe avere senso nel contesto del prodotto (nr pezzi per prodotto, ad esempio).
+ *
+ */
 public class Prodotto {
     private String id;
     private String descrizione;

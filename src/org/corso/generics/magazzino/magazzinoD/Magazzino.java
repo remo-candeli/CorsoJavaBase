@@ -5,7 +5,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Questa classe prevede che le quantitá movimentate siano sempre espresse in forma di Interi.
+ * Adesso si comincia a ragionare.
+ * E' stato introdotto il concetto di "Transazione" ed incapsulato in una classe denominata "TransazioneMagazzino".
+ * A questo punto si, é possibile includere in quella classe anche la quantitá perché una transazione di magazzino
+ * prevede certamente una prodotto ed un movimento di quantitá oltre che un tipo di movimento di magzzino.
+ * Ed é proprio quello che é stato incluso della classe in questione.
+ * A questo punto l'implementazione dei metodi diventa molto lineare.
  *
  * @param <T> - é un placeholder (tipo parametrico) per individuare il tipo di elemento gestito dal magazino
  */
