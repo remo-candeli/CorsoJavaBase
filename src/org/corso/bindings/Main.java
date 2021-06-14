@@ -6,18 +6,23 @@ public class Main {
 
     public static void main(String[] args) {
         // Binding Statico
-        Automobile automezzoA = new Automobile();
-        Moto automezzoB = new Moto();
+        Automezzo mercedes = new Automobile();
+        Automezzo ferrari = new Ferrari();
+        Moto moto = new Moto();
 
-        // stampaSoloMoto(automezzoA); Non si puó fare perché il metodo stampa solo Moto
-        stampaSoloMoto(automezzoB);
+        // stampaSoloMoto(mercedes); // Non si puó fare perché il metodo stampa solo Moto
+        //stampaSoloMoto(moto);
+        stampaTuttiITipiDiAutomezzo(mercedes);
+        stampaTuttiITipiDiAutomezzo(ferrari);
 
+        /*
         // Binding Dinamico
         Automezzo automezzo1 = new Automobile();
         Automezzo automezzo2 = new Moto();
 
         stampaTuttiITipiDiAutomezzo(automezzo1);
         stampaTuttiITipiDiAutomezzo(automezzo2);
+        */
     }
 
     /**
