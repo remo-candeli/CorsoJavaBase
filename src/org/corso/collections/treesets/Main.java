@@ -41,7 +41,7 @@ public class Main {
         persone.add(bohr);
         persone.add(curie);
         persone.add(davinci);
-        
+
         for(Persona persona: persone) {
             System.out.println(""+ persona.getCognome() + " " + persona.getNome());
         }
