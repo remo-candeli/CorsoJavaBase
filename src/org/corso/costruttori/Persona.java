@@ -1,5 +1,7 @@
 package org.corso.costruttori;
 
+import java.util.Objects;
+
 public class Persona extends Object{
     private String nome;
     private String codiceFiscale;
@@ -36,5 +38,18 @@ public class Persona extends Object{
 
     public void setColoreCapelli(String coloreCapelli) {
         this.coloreCapelli = coloreCapelli;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Persona persona = (Persona) o;
+        return Objects.equals(codiceFiscale, persona.codiceFiscale);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(codiceFiscale);
     }
 }

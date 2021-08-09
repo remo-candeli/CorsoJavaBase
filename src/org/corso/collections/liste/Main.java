@@ -9,6 +9,7 @@ public class Main {
     public static void main(String[] args) {
         ArrayList<String> nomiNonCiPiace = new ArrayList<>();
 
+
         List<String> nomi = new ArrayList<>();  // LinkedList, CopyOnWriteArrayList
         // aggiungere elementi
         nomi.add("Remo");
@@ -52,7 +53,7 @@ public class Main {
         }
         System.out.println("Stampa la lista (BAD): "+ nomiCopiati); // ...comportamento inatteso!!!!
 
-        // usiamo un iterator per cilare la lista rimuovendo gli elementi che desideriamo.
+        // usiamo un iterator per ciclare la lista rimuovendo gli elementi che desideriamo.
         Iterator<String> nomiIterator = nomi.listIterator();
         while(nomiIterator.hasNext()) {
             if (nomiIterator.next().startsWith("M")) {

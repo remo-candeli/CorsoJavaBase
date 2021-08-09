@@ -13,7 +13,6 @@ public class Magazzino {
 
     private static int nrProdottiInseriti;
     private Prodotto[] prodotti;
-    private int[] quantita;
 
     public Magazzino() {
         nrProdottiInseriti = 0;

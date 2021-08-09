@@ -1,13 +1,16 @@
 package org.corso.collections.mappe;
 
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.Map;
-import java.util.TreeMap;
+import org.corso.costruttori.Persona;
+import org.corso.generics.magazzino.Prodotto;
+
+import java.util.*;
 
 public class Main {
 
     public static void main(String[] args) {
+
+        Map<Persona, List<Prodotto>> acquisti = new HashMap<>();
+        Map<Persona, Prodotto> acquisto = new HashMap<>();
 
         // differenze tra HashMap e HashTable https://www.javatpoint.com/difference-between-hashmap-and-hashtable
         // differenze tra HashMap e TreeMap https://www.javatpoint.com/difference-between-hashmap-and-treemap

@@ -10,5 +10,9 @@ public class App {
         magazzino.carico(new Prodotto(), 5);
         magazzino.carico(new Prodotto(), 6);
 
+
+        Magazzino<String> magazzinoStringhe = new Magazzino<>();
+        magazzinoStringhe.carico("Remo", 5);
+        magazzinoStringhe.carico("Pippo", 6);
     }
 }
